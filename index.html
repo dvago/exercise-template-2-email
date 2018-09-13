@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="gmail-css.css">
+</head>
+<body>
+    <script src="jscolor.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <div class="table-main" align="left">
+      <p class="box-txt font">Pick background color:
+        <input class="jscolor {onFineChange:'update(this)'}" value="0A2B4E">
+        <p class="box-txt font">Pick header text color:
+          <select id="text-colour-select" onchange="myFunction()">
+            <option value="W1">White</option>
+            <option value="B1">Black</option>
+          </select>
+          <button class="button-capture button-capture2" id="capture">Create screenshot</button>
+        </p>
+    </div>
+    <table id="template" class="table-main">
+      <tbody>
+        <tr>
+          <td align="center">
+            <table id="bg1" class="bg-header width-100">
+              <tr>
+                <td align="center">
+                  <a id="logo-image-button"><img name="logo-image" class="logo" src="https://www.dwh.co.uk/assets/web/theme_dwh/style/new-images/logos/site-header-logo-home.png" alt=""></a>
+                  <div class="modal-logo-image">
+                    <div class="modal-wrapper">
+                      <h2 class="font">Paste URL of new logo</h2>
+                      <div class="input-group padding-bottom-10">
+                        <input type="text" placeholder="New Logo URL" value="" name="logo-image-url">
+                      </div>
+                      <button id="logo-image-save" class="main-button">Save</button>
+                      <button id="logo-image-exit" class="exit-button">x</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="banner-txt font" align="center">
+                  <p id="banner-text-copy-button">Luxury two bedroom homes in London.<br> Now available!<br><span>Click to edit this text!</span></p>
+                  <div class="modal-banner">
+                    <div class="modal-wrapper">
+                      <h2 class="font">Edit Banner Copy</h2>
+                      <div class="input-group padding-bottom-10">
+                      <textarea placeholder="New Text" name="banner-text-copy"></textarea>
+                      </div>
+                      <button id="banner-text-save" class="main-button">Save</button>
+                      <button id="banner-text-exit" class="exit-button">x</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <table>
+              <tr>
+                <td align="center">
+                  <a id="header-image-button"><img name="header-image" class="header-img" src="http://www.barrattdevelopments.co.uk/~/media/Images/B/Barratt-Developments/projects-showcase/gallery/large/fulham-riverside-3.jpg?h=360&la=en&w=640" alt=""></a>
+                  <div class="modal-header-image">
+                    <div class="modal-wrapper">
+                      <h2 class="font">Paste URL of new image</h2>
+                      <div class="input-group padding-bottom-10">
+                        <input type="text" placeholder="New Image URL" value="" name="header-image-url">
+                      </div>
+                      <button id="header-image-save" class="main-button">Save</button>
+                      <button id="header-image-exit" class="exit-button">x</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <table id="bg2" class="bg-header width-100">
+              <tr>
+                <td class="banner-txt font" align="center">
+                  <p id="header-text-copy-button">Want to live in a new home this summer?<br><span>Click to edit this text!</span></p>
+                  <div class="modal-header">
+                    <div class="modal-wrapper">
+                      <h2 class="font">Edit Header Copy</h2>
+                      <div class="input-group padding-bottom-10">
+                      <textarea placeholder="New Text" name="header-text-copy"></textarea>
+                      </div>
+                      <button id="header-text-save" class="main-button">Save</button>
+                      <button id="header-text-exit" class="exit-button">x</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <table class="bg-white">
+              <tr>
+                <td class="width-600px main-txt font" align="center">
+                  <p id="main-text-copy-button">We would like to say how very pleased we were with the service we have received from Connells on this transaction. We bought and sold this house with you and at all times your staff have been professional, responsive and helpful. We would have no hesitation in recommending you.<br><span>Click to edit this text!</span></p>
+                  <div class="modal-main-text">
+                    <div class="modal-wrapper">
+                      <h2 class="font">Edit main text copy</h2>
+                      <div class="input-group padding-bottom-10">
+                      <textarea placeholder="New Text" name="main-text-copy"></textarea>
+                      </div>
+                      <button id="main-text-save" class="main-button">Save</button>
+                      <button id="main-text-exit" class="exit-button">x</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="padding-bottom-10" align="center">
+                  <button type="button" class="chameleon-button font" id="bttn1">
+                           Find out more!
+                         </button>
+                  <div class="modal-main-button">
+                    <div class="modal-wrapper">
+                      <h2 class="font">Edit button copy</h2>
+                      <div class="input-group padding-bottom-10">
+                        <input type="text" placeholder="New Button Text" value="" name="main-button-copy">
+                      </div>
+                      <button id="main-button-save" class="main-button">Save</button>
+                      <button id="main-button-exit" class="exit-button">x</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table class="bg-white table-main">
+              <tr>
+                <td align="center">
+                  <table class="img-box" align="left">
+                    <tr>
+                      <td align="center">
+                        <a id="image-box1-button"><img name="image-box1" class="img-max-size" src="https://www.countryside-properties.com/media/2656/14932-Liberty-Quarter-Phase-2-Acton-Gardens-Countryside.jpg" alt=""></a>
+                        <div class="modal-image-box1">
+                          <div class="modal-wrapper">
+                            <h2 class="font">Paste URL of new image</h2>
+                            <div class="input-group padding-bottom-10">
+                              <input type="text" placeholder="New Image URL" value="" name="image-box1-url">
+                            </div>
+                            <button id="image-box1-save" class="main-button">Save</button>
+                            <button id="image-box1-exit" class="exit-button">x</button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="width-600px box-txt font" align="center">
+                        <p id="box1-text-copy-button">Like to say how very pleased we were with the service we have received from Connells on this transaction.<br><span>Click to edit this text!</span></p>
+                        <div class="modal-box1-text">
+                          <div class="modal-wrapper">
+                            <h2 class="font">Edit text copy</h2>
+                            <div class="input-group padding-bottom-10">
+                            <textarea placeholder="New Text" name="box1-text-copy"></textarea>
+                            </div>
+                            <button id="box1-text-save" class="main-button">Save</button>
+                            <button id="box1-text-exit" class="exit-button">x</button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="padding-bottom-10" align="center">
+                        <button type="button" class="chameleon-button font" id="button-box-1">
+                                 Find out more!
+                               </button>
+                        <div class="modal-box1-button">
+                          <div class="modal-wrapper">
+                            <h2 class="font">Edit button copy</h2>
+                            <div class="input-group padding-bottom-10">
+                              <input type="text" placeholder="New Button Text" value="" name="box1-button-copy">
+                            </div>
+                            <button id="box1-button-save" class="main-button">Save</button>
+                            <button id="box1-button-exit" class="exit-button">x</button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="img-box" align="right">
+                    <tr>
+                      <td align="center">
+                        <a id="image-box2-button"><img name="image-box2" class="img-max-size" src="http://russellhomes.co.uk/perch/resources/properties/help-to-buy-590-w360.jpg" alt=""></a>
+                        <div class="modal-image-box2">
+                          <div class="modal-wrapper">
+                            <h2 class="font">Paste URL of new image</h2>
+                            <div class="input-group padding-bottom-10">
+                              <input type="text" placeholder="New Image URL" value="" name="image-box2-url">
+                            </div>
+                            <button id="image-box2-save" class="main-button">Save</button>
+                            <button id="image-box2-exit" class="exit-button">x</button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="width-600px box-txt font" align="center">
+                        <p id="box2-text-copy-button">Say how very pleased we were with the service we have received from Connells on this transaction.<br><span>Click to edit this text!</span></p>
+                        <div class="modal-box2-text">
+                          <div class="modal-wrapper">
+                            <h2 class="font">Edit text copy</h2>
+                            <div class="input-group padding-bottom-10">
+                            <textarea placeholder="New Text" name="box2-text-copy"></textarea>
+                            </div>
+                            <button id="box2-text-save" class="main-button">Save</button>
+                            <button id="box2-text-exit" class="exit-button">x</button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="padding-bottom-10" align="center">
+                        <button type="button" class="chameleon-button font" id="button-box-2">
+                                 Find out more!
+                               </button>
+                        <div class="modal-box2-button">
+                          <div class="modal-wrapper">
+                            <h2 class="font">Edit button copy</h2>
+                            <div class="input-group padding-bottom-10">
+                              <input type="text" placeholder="New Button Text" value="" name="box2-button-copy">
+                            </div>
+                            <button id="box2-button-save" class="main-button">Save</button>
+                            <button id="box2-button-exit" class="exit-button">x</button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br/>
+    <canvas id="screenshot"></canvas>    
+<script type="text/javascript" src="gmail-js.js"></script>
+<script type="text/javascript" src="jscolor-change.js"></script>
+</body>
+</html>
