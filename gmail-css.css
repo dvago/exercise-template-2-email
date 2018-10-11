@@ -197,3 +197,7 @@ select, textarea {
     background-color: #555555;
     color: white;
 }
+.header {
+  background-color: purple;
+  height: 80px;
+}
