@@ -76,10 +76,19 @@
   width: 295px;
 }
 
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
 .box-txt {
   font-size: 14px;
   padding: 10px;
   color: #000000;
+  width: 295px;
 }
 
 .img-max-size {
