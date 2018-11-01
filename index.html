@@ -16,66 +16,66 @@
     <!-- Section 1 Start -->
     <div class="table-main" align="left">
       <div class="color-picker">
-          <p class="box-txt font">Pick background color: </p>
+        <p class="box-txt font">Pick background color: </p>
           <input class="jscolor {onFineChange:'update(this)'}" value="0A2B4E">
       </div>
       <div class="color-picker">
-          <p class="box-txt font">Pick header text color:
-              <select id="text-colour-select" onchange="myFunction()">
-                <option value="W1">White</option>
-                <option value="B1">Black</option>
-              </select>
+        <p class="box-txt font">Pick header text color:
+          <select id="text-colour-select" onchange="myFunction()">
+            <option value="W1">White</option>
+            <option value="B1">Black</option>
+          </select>
       </div>
       <button class="button-capture button-capture2" id="capture">Create screenshot here, now!</button>
     </div>
     <!-- Section 1 End -->
 
     <div id="template" class="table-main">
-
+      
     <!-- Section 2 Start -->
     <div class="table-main" align="center">
-      <div id="bg1" class="bg-header width-100">
-    <a id="logo-image-button"><img name="logo-image" class="logo" src="https://www.dwh.co.uk/assets/web/theme_dwh/style/new-images/logos/site-header-logo-home.png" alt=""></a>
-                  <div class="modal-logo-image">
-                    <div class="modal-wrapper">
-                      <h2 class="font">Paste URL of new logo</h2>
-                      <div class="input-group padding-bottom-10">
-                        <input type="text" placeholder="New Logo URL" value="" name="logo-image-url">
-                      </div>
-                      <button id="logo-image-save" class="main-button">Save</button>
-                      <button id="logo-image-exit" class="exit-button">x</button>
-                    </div>
-                  </div>
-                  <div class="banner-txt font" align="center">
-                      <p id="banner-text-copy-button">Luxury two bedroom homes in London.<br> Now available!<br><span>Click to edit this text!</span></p>
-                      <div class="modal-banner">
-                        <div class="modal-wrapper">
-                          <h2 class="font">Edit Banner Copy</h2>
-                          <div class="input-group padding-bottom-10">
-                          <textarea placeholder="New Text" name="banner-text-copy"></textarea>
-                          </div>
-                          <button id="banner-text-save" class="main-button">Save</button>
-                          <button id="banner-text-exit" class="exit-button">x</button>
-                        </div>
-                      </div>
-                  </div>
-                  </div>
-                 
-                </div>
-                
-                <div align="center">
-                    <a id="header-image-button"><img name="header-image" class="header-img" src="http://www.barrattdevelopments.co.uk/~/media/Images/B/Barratt-Developments/projects-showcase/gallery/large/fulham-riverside-3.jpg?h=360&la=en&w=640" alt=""></a>
-                    <div class="modal-header-image">
-                      <div class="modal-wrapper">
-                        <h2 class="font">Paste URL of new image</h2>
-                        <div class="input-group padding-bottom-10">
-                          <input type="text" placeholder="New Image URL" value="" name="header-image-url">
-                        </div>
-                        <button id="header-image-save" class="main-button">Save</button>
-                        <button id="header-image-exit" class="exit-button">x</button>
-                      </div>
-                    </div>
-                </div>
+      <section id="bg1" class="bg-header width-100">
+        <a id="logo-image-button"><img name="logo-image" class="logo" src="https://www.dwh.co.uk/assets/web/theme_dwh/style/new-images/logos/site-header-logo-home.png" alt=""></a>
+        <div class="modal-logo-image">
+          <div class="modal-wrapper">
+            <h2 class="font">Paste URL of new logo</h2>
+            <div class="input-group padding-bottom-10">
+              <input type="text" placeholder="New Logo URL" value="" name="logo-image-url">
+            </div>
+            <button id="logo-image-save" class="main-button">Save</button>
+            <button id="logo-image-exit" class="exit-button">x</button>
+          </div>
+        </div>
+        <div class="banner-txt font" align="center">
+          <p id="banner-text-copy-button">Luxury two bedroom homes in London.<br> Now available!<br><span>Click to edit this text!</span></p>
+          <div class="modal-banner">
+            <div class="modal-wrapper">
+              <h2 class="font">Edit Banner Copy</h2>
+              <div class="input-group padding-bottom-10">
+                <textarea placeholder="New Text" name="banner-text-copy"></textarea>
+              </div>
+              <button id="banner-text-save" class="main-button">Save</button>
+              <button id="banner-text-exit" class="exit-button">x</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div align="center">
+          <a id="header-image-button"><img name="header-image" class="header-img" src="http://www.barrattdevelopments.co.uk/~/media/Images/B/Barratt-Developments/projects-showcase/gallery/large/fulham-riverside-3.jpg?h=360&la=en&w=640" alt=""></a>
+          <div class="modal-header-image">
+            <div class="modal-wrapper">
+              <h2 class="font">Paste URL of new image</h2>
+              <div class="input-group padding-bottom-10">
+                <input type="text" placeholder="New Image URL" value="" name="header-image-url">
+              </div>
+              <button id="header-image-save" class="main-button">Save</button>
+              <button id="header-image-exit" class="exit-button">x</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <!-- Section 2 End -->
 
     <!-- Section 3 Start -->
@@ -96,7 +96,7 @@
         </div>
       </section>
       <section class="bg-white">
-        <div class="width-600px main-txt font" align="center">
+        <div class="main-txt font" align="center">
           <p id="main-text-copy-button">We would like to say how very pleased we were with the service we have received from Connells on this transaction. We bought and sold this house with you and at all times your staff have been professional, responsive and helpful. We would have no hesitation in recommending you.<br><span>Click to edit this text!</span></p>
           <div class="modal-main-text">
             <div class="modal-wrapper">
@@ -143,7 +143,7 @@
                 </div>
               </div>
             </div>
-            <div class="width-600px box-txt font" align="center">
+            <div class="box-txt font" align="center">
               <p id="box1-text-copy-button">Like to say how very pleased we were with the service we have received from Connells on this transaction.<br><span>Click to edit this text!</span></p>
               <div class="modal-box1-text">
                 <div class="modal-wrapper">
@@ -184,7 +184,7 @@
                 </div>
               </div>
             </div>
-            <div class="width-600px box-txt font" align="center">
+            <div class="box-txt font" align="center">
               <p id="box2-text-copy-button">Say how very pleased we were with the service we have received from Connells on this transaction.<br><span>Click to edit this text!</span></p>
               <div class="modal-box2-text">
                 <div class="modal-wrapper">
@@ -214,7 +214,7 @@
         </section>
     <!-- Section 4 End -->
 
-      </div>
+    </div>
 
     <canvas id="screenshot"></canvas>    
   <script type="text/javascript" src="gmail-js.js"></script>

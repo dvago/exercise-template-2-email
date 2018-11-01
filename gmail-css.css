@@ -27,6 +27,7 @@
   padding: 20px;
   color: #FFFFFF;
   font-weight: 200;
+  word-wrap: break-word;
 }
 
 .font {
@@ -47,6 +48,7 @@
   line-height: 22px;
   color: #000000;
   padding: 20px;
+  word-wrap: break-word;
 }
 
 .bg-white {
@@ -88,7 +90,8 @@
   font-size: 14px;
   padding: 10px;
   color: #000000;
-  width: 295px;
+  width: 280px;
+  word-wrap: break-word;
 }
 
 .img-max-size {
