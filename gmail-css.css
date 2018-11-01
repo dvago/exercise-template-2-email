@@ -210,3 +210,8 @@ select, textarea {
   background-color: purple;
   height: 80px;
 }
+
+.color-picker {
+  display: inline-block;
+  width: 250px;
+}
