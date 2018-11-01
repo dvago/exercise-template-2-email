@@ -15,15 +15,18 @@
 
     <!-- Section 1 Start -->
     <div class="table-main" align="left">
-      <p class="box-txt font">Pick background color:
-        <input class="jscolor {onFineChange:'update(this)'}" value="0A2B4E">
+      <div class="color-picker">
+        <p class="box-txt font">Pick background color: </p>
+          <input class="jscolor {onFineChange:'update(this)'}" value="0A2B4E">
+      </div>
+      <div class="color-picker">
         <p class="box-txt font">Pick header text color:
           <select id="text-colour-select" onchange="myFunction()">
             <option value="W1">White</option>
             <option value="B1">Black</option>
           </select>
-          <button class="button-capture button-capture2" id="capture">Create screenshot here, now!</button>
-        </p>
+      </div>
+      <button class="button-capture button-capture2" id="capture">Create screenshot here, now!</button>
     </div>
     <!-- Section 1 End -->
 
