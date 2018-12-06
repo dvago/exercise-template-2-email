@@ -9,24 +9,28 @@
   <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <!-- Zoopla Purple Header Start -->
     <header class="header">
-      <p></p>
+      <p class="title">Template2Mail</p>
     </header>
-    <!-- Zoopla Purple Header End -->
+    <!-- Zoopla Purple Header End -->  
 
+<div class="container">  
+  <div class="main">
     <!-- Section 1 Start -->
+    <div class="intro-text">
+      <p >Start editing the template simply clicking on the text<br /> within the outlined boxes</p>
+    </div>
     <div class="table-main" align="left">
       <div class="color-picker">
-        <p class="box-txt font">Pick background color: </p>
+        <p class="box-txt font">Change background color: </p>
           <input class="jscolor {onFineChange:'update(this)'}" value="0A2B4E">
       </div>
       <div class="color-picker">
-        <p class="box-txt font">Pick header text color:
-          <select id="text-colour-select" onchange="myFunction()">
+        <p class="box-txt font">Select text color:
+          <select cl;ass="text-colour-select" id="text-colour-select" onchange="myFunction()">
             <option value="W1">White</option>
             <option value="B1">Black</option>
           </select>
       </div>
-      <button class="button-capture button-capture2" id="capture">Create screenshot here, now!</button>
     </div>
     <!-- Section 1 End -->
 
@@ -215,8 +219,17 @@
     <!-- Section 4 End -->
 
     </div>
+    </div>
+</div>
 
-    <canvas id="screenshot"></canvas>    
+<div class="screenshot">   
+          <button class="main-button" id="capture">Create screenshot</button>
+      <canvas class="screenshot-add" id="screenshot"></canvas> 
+</div>
+
+</div>  
+
+      
   <script type="text/javascript" src="gmail-js.js"></script>
   <script type="text/javascript" src="jscolor-change.js"></script>
 </body>

@@ -88,8 +88,7 @@
 
 .box-txt {
   font-size: 14px;
-  padding: 10px;
-  color: #000000;
+  color: #d2d2d5;
   width: 280px;
   word-wrap: break-word;
 }
@@ -137,12 +136,12 @@
 
 .main-button {
   background-color: #ff5722;
-  border-radius: 5px;
+  border-radius: 25px;
   border: 0px;
   cursor: pointer;
   color: #ffffff;
   font-size: 14px;
-  padding: 10px;
+  padding: 10px 50px;
   text-decoration: none;
 }
 
@@ -185,29 +184,30 @@ select, textarea {
 }
 
 .button-capture {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .button-capture2 {
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
 }
 
 .button-capture2:hover {
-    background-color: #555555;
-    color: white;
+  background-color: #555555;
+  color: white;
+  border: 2px solid #555555;
 }
 .header {
   background-color: purple;
@@ -217,4 +217,50 @@ select, textarea {
 .color-picker {
   display: inline-block;
   width: 250px;
+}
+
+.title {
+  font-size: 1.2em;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: left;
+  padding: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #555555;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.main {
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+
+.screenshot {
+  display: inline-block;
+  width: 1000px; 
+}
+
+.left {
+  height: 800px;
+  width: 50%;
+  background-color: #515151;
+  float: left;
+}
+
+.right {
+  height: 800px;
+  width: 50%;
+  background-color: #ff55ff;
+  float: left;
+}
+
+.container {
+  display: flex;
 }
