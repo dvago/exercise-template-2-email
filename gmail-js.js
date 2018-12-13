@@ -53,6 +53,7 @@
     chameleonButton = document.querySelectorAll('.chameleon-button'),
     templateTable = document.querySelector('#template'),
     captureScreenShot = document.querySelector('#capture'),
+    screenshot = document.getElementById('screenshot'),
     screenshotOptions = {
         imageTimeout: 5000,
         allowTaint: true
@@ -292,7 +293,11 @@
 
 captureScreenShot.addEventListener('click', function() {
 	html2canvas(templateTable, screenshotOptions).then(canvas => {
-  	document.body.appendChild(canvas)
+    if(screenshot.getElementsByTagName('canvas').length > 0) {
+      screenshot.replaceChild(canvas, screenshot.childNodes[0]);
+    } else {
+      screenshot.appendChild(canvas);
+    }
   });
 });
 

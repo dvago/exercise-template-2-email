@@ -145,6 +145,10 @@
   text-decoration: none;
 }
 
+.main-button:hover {
+  background-color: #250b0b;
+}
+
 .exit-button {
   border: 1px solid #ff5722;
   border-radius: 50%;
@@ -237,14 +241,16 @@ select, textarea {
 }
 
 .main {
-  display: inline-block;
+  background-color: #ffffff;
   width: 50%;
   float: left;
 }
 
 .screenshot {
-  display: inline-block;
-  width: 1000px; 
+  width: 1000px;
+  text-align: center;
+  padding: 100px 0px 20px 0px;
+  background-color: #eeecee; 
 }
 
 .left {
@@ -263,4 +269,13 @@ select, textarea {
 
 .container {
   display: flex;
+ 
+}
+
+.screenshot-add {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding-top: 20px;
+  min-height: 1000px;
+  margin:40px;
 }
