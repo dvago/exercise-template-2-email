@@ -83,7 +83,7 @@
 }
 
 .float-right {
-  float: right;
+  overflow: auto;
 }
 
 .box-txt {
@@ -264,7 +264,7 @@ select, textarea {
   height: 800px;
   width: 50%;
   background-color: #ff55ff;
-  float: left;
+  float: right;
 }
 
 .container {
